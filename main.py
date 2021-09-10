@@ -2,13 +2,13 @@ import pandas as pd
 
 dataset = pd.read_csv('cancer.csv')
 
-x = dataset.drop(columns=["diagnosis(1=m, 0=b)"])
+x = dataset.drop(columns=["diagnosis(1=m, 0=b)"])    #tolgo la collonna con questa label
 
 
-y = dataset["diagnosis(1=m, 0=b)"]
+y = dataset["diagnosis(1=m, 0=b)"]   #numero la colonna con questa label?
+
 
 # Split the data into a training set and a testing set.
-
 
 from sklearn.model_selection import train_test_split
 
@@ -36,8 +36,6 @@ model.fit(x_train, y_train, epochs=1000)
 
 
 model.evaluate(x_test, y_test)
-
-
 
 
 
