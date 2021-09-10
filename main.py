@@ -12,7 +12,9 @@ y = dataset["diagnosis(1=m, 0=b)"]   #numero la colonna con questa label?
 
 from sklearn.model_selection import train_test_split
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)  #esempi, etichetta, percentuale di esempi da usare 0.2 = 20%
+
+#output 4 insiemi, insieme addestramento, inseme dei test, etichetta add, etichetta test
 
 
 #Build and train the model.
